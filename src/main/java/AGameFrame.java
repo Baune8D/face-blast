@@ -30,6 +30,7 @@ public class AGameFrame extends JFrame implements KeyListener {
     }
 
     public AGameFrame() {
+        setDefaultCloseOperation(EXIT_ON_CLOSE);
         setLayout(new BorderLayout());
         setSize(600, 628);
 
