@@ -49,7 +49,7 @@ public class PanelGame extends JPanel {
 
                 Iterator<EntityEnemyFace> itr2 = Entities.getEnemyList().values().iterator();
                 while (itr2.hasNext()) {
-                    Entities.fadeEnemy((EntityEnemyFace) itr2.next());
+                    Entities.fadeEnemy(itr2.next());
                 }
             }
         });
@@ -192,7 +192,7 @@ public class PanelGame extends JPanel {
     private void drawShot(Graphics g) {
         Iterator<EntityShot> itr = Entities.getShotList().values().iterator();
         while (itr.hasNext()) {
-            EntityShot shot = (EntityShot)itr.next();
+            EntityShot shot = itr.next();
 
             if ((shot.getDirection() == 1) || (shot.getDirection() == 3)) {
                 g.fillRect(shot.x, shot.y, 15, 3);
@@ -205,7 +205,7 @@ public class PanelGame extends JPanel {
     private void drawEnemy(Graphics g) {
         Iterator<EntityEnemyFace> itr = Entities.getEnemyList().values().iterator();
         while (itr.hasNext()) {
-            EntityEnemyFace entity = (EntityEnemyFace)itr.next();
+            EntityEnemyFace entity = itr.next();
             if (entity.isDead().booleanValue()) {
                 g.drawImage(this.killImage, (int)entity.getX(), (int)entity.getY(), null);
                 Entities.enemyDie(entity.getID());
@@ -217,7 +217,7 @@ public class PanelGame extends JPanel {
 
     private void drawPowerUp(Graphics g) {
         for (int i = 0; i < Entities.getPowerList().size(); i++) {
-            EntityPowerUp powerup = (EntityPowerUp)Entities.getPowerList().get(i);
+            EntityPowerUp powerup = Entities.getPowerList().get(i);
             g.drawImage(powerup.getImage(), (int)powerup.getX(), (int)powerup.getY(), null);
         }
     }

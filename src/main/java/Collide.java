@@ -17,7 +17,7 @@ public abstract class Collide {
         Map<Integer, EntityShot> shotList = Entities.getShotList();
         Integer[] itr = shotList.keySet().toArray(new Integer[0]);
         for (Integer shotNumber : itr) {
-            collideShot((EntityShot)shotList.get(shotNumber));
+            collideShot(shotList.get(shotNumber));
         }
         collidePowerUp();
         if (!player.invurnableState.booleanValue()) {
@@ -36,7 +36,7 @@ public abstract class Collide {
 
         Iterator<EntityEnemyFace> itr = Entities.getEnemyList().values().iterator();
         while (itr.hasNext()) {
-            EntityEnemyFace enemy = (EntityEnemyFace)itr.next();
+            EntityEnemyFace enemy = itr.next();
             if (!enemy.isDead().booleanValue()) {
                 if (shot.checkEnemyShot().booleanValue()) {
                     if ((!player.invurnableState.booleanValue()) && (
@@ -71,7 +71,7 @@ public abstract class Collide {
         int newy = (int)Entities.getPlayer().getY();
         Iterator<EntityPowerUp> itr = Entities.getPowerList().iterator();
         while (itr.hasNext()) {
-            EntityPowerUp powerup = (EntityPowerUp)itr.next();
+            EntityPowerUp powerup = itr.next();
             if ((powerup.contains(newx, newy)) || (powerup.contains(newx + 30, newy)) || (powerup.contains(newx, newy + 15)) || (powerup.contains(newx + 30, newy + 15))) {
                 if (powerup.getType() == 0) {
                     Controls.shotDelay = 50;

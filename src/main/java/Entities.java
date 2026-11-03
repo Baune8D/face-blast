@@ -93,7 +93,7 @@ public abstract class Entities implements ActionListener {
         Timer dtime = new Timer(2000, new ActionListener() {
             public void actionPerformed(ActionEvent e) {
                 if (!Entities.dieList.isEmpty()) {
-                    Entities.deleteEnemy(((Integer)Entities.dieList.get(0)).intValue());
+                    Entities.deleteEnemy(Entities.dieList.get(0).intValue());
                     Entities.dieList.remove(0);
                 }
             }
@@ -187,7 +187,7 @@ public abstract class Entities implements ActionListener {
 
     public static void deletePowerUp(int id) {
         for (int i = 0; i < powerList.size(); i++) {
-            if (((EntityPowerUp)powerList.get(i)).getID() == id) {
+            if (powerList.get(i).getID() == id) {
                 powerList.remove(i);
             }
         }
