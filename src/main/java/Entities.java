@@ -17,7 +17,6 @@ public abstract class Entities implements ActionListener {
     private static HashMap<Integer, EntityShot> shotList;
     private static HashMap<Integer, EntityEnemyFace> enemyList;
     private static LinkedList<EntityPowerUp> powerList;
-    private static int tmpid;
 
     public static void initialize(EntityPlayer player) {
         Entities.player = player;
@@ -194,8 +193,7 @@ public abstract class Entities implements ActionListener {
         }
     }
 
-    public static void timeOut(int id, int type) {
-        tmpid = id;
+    public static void timeOut(final int id, int type) {
         int time;
         if (type == 0) {
             time = 15000;
@@ -204,7 +202,7 @@ public abstract class Entities implements ActionListener {
         }
         Timer timeOut = new Timer(time, new ActionListener() {
             public void actionPerformed(ActionEvent e) {
-                Entities.deletePowerUp(Entities.tmpid);
+                Entities.deletePowerUp(id);
             }
         });
         timeOut.setRepeats(false);
