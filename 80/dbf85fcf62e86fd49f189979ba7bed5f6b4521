@@ -1,0 +1,19 @@
+pom.xml
+  s_4a339ac27184ff::t_5ac6c65cc4ca07 82-93
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "80dbf85fcf62e86fd49f189979ba7bed5f6b4521",
+  "prompts": {},
+  "sessions": {
+    "s_4a339ac27184ff": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "a153322c-f0ad-47ac-93f0-7e475296bd50",
+        "model": "claude-opus-5-5"
+      },
+      "human_author": "Morten Larsen <mortenl41@gmail.com>"
+    }
+  }
+}
