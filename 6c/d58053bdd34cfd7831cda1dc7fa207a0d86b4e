@@ -1,0 +1,49 @@
+.editorconfig
+  s_1da20591e67452::t_5c5fb81d6364d6 1-15
+.gitattributes
+  s_1da20591e67452::t_1c578a7731de22 1-2
+src/AGameFrame.java
+  s_1da20591e67452::t_4db0d5c69ea6e2 1-146
+src/Collide.java
+  s_1da20591e67452::t_ce6662b7766f65 1-103
+src/Controls.java
+  s_1da20591e67452::t_531e1b3610a5fa 1-164
+src/Entities.java
+  s_1da20591e67452::t_6946acfbb6a8cb 1-262
+src/EntityEnemyFace.java
+  s_1da20591e67452::t_699e17642c77e0 1-75
+src/EntityEnemyRobot.java
+  s_1da20591e67452::t_472891b49be5a6 1-20
+src/EntityPlayer.java
+  s_1da20591e67452::t_3cd2c1bcb56575 1-45
+src/EntityPowerUp.java
+  s_1da20591e67452::t_88c97f13da02f8 1-43
+src/EntityShot.java
+  s_1da20591e67452::t_85c949a65e1424 1-32
+src/ModeArcade.java
+  s_1da20591e67452::t_a004a16b0b0d49 1-74
+src/ModeCampaign.java
+  s_1da20591e67452::t_eb61449a2eb0bc 1-68
+src/PanelGame.java
+  s_1da20591e67452::t_a6ee2d54f346ee 1-230
+src/PanelHighscore.java
+  s_1da20591e67452::t_ac0e00d712acf1 1-105
+src/PanelMenu.java
+  s_1da20591e67452::t_7d782a3396e981 1-44
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "6cd58053bdd34cfd7831cda1dc7fa207a0d86b4e",
+  "prompts": {},
+  "sessions": {
+    "s_1da20591e67452": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "56de8afb-cd13-4b9c-b07e-fc995dbca6f0",
+        "model": "claude-opus-5-5"
+      },
+      "human_author": "Morten Larsen <mortenl41@gmail.com>"
+    }
+  }
+}
