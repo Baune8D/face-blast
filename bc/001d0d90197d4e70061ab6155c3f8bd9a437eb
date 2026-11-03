@@ -1,0 +1,19 @@
+src/main/java/PanelHighscore.java
+  s_1da20591e67452::t_fc46be1c287743 8,10,12-13,18,22-29,32-35,46,48-52,57-61,64-65,72-74,77-83,87-95,97-105,107-120,122-126,128-132,134-144,146-172,175-179,181-189,191-194
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "bc001d0d90197d4e70061ab6155c3f8bd9a437eb",
+  "prompts": {},
+  "sessions": {
+    "s_1da20591e67452": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "56de8afb-cd13-4b9c-b07e-fc995dbca6f0",
+        "model": "claude-opus-5-5"
+      },
+      "human_author": "Morten Larsen <mortenl41@gmail.com>"
+    }
+  }
+}
