@@ -1,0 +1,19 @@
+.github/workflows/ci.yml
+  s_a7369bbdcc2cab::t_4508a3a58f16b8 1-27
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.5",
+  "base_commit_sha": "bea9de3e46d90803d6ae9c19b78c911d17c22918",
+  "prompts": {},
+  "sessions": {
+    "s_a7369bbdcc2cab": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "d1fe0b82-1575-481f-851e-23dfeea755e2",
+        "model": "claude-opus-5-5"
+      },
+      "human_author": "Morten Larsen <mortenl41@gmail.com>"
+    }
+  }
+}
