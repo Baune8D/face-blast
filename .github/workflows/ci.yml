@@ -1,0 +1,27 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  build:
+    runs-on: ubuntu-24.04
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-java@v6
+        with:
+          distribution: temurin
+          java-version: 21
+          cache: maven
+      # Local builds only show compiler warnings; CI fails on them
+      - run: ./mvnw -B verify -Dmaven.compiler.failOnWarning=true
+      # Uploaded as the jar itself, not zipped
+      - uses: actions/upload-artifact@v7
+        with:
+          path: target/face-blast.jar
+          archive: false
+          if-no-files-found: error
