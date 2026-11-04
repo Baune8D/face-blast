@@ -1,7 +1,7 @@
 # FaceBlast
 
 [![CI](https://github.com/Baune8D/face-blast/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/Baune8D/face-blast/actions/workflows/ci.yml)
-[![License: MIT](https://img.shields.io/github/license/Baune8D/face-blast)](https://github.com/Baune8D/face-blast/blob/main/LICENSE.txt)
+[![License: MIT](https://img.shields.io/github/license/Baune8D/face-blast)](https://github.com/Baune8D/face-blast/blob/main/LICENSE)
 
 A small Swing game I wrote in Java while I went to school in 2012. Faces and robots close in from every side of the screen, and you shoot them before they reach you.
 
@@ -57,4 +57,4 @@ A score that beats one of the 10 takes its placement, and the scores below it mo
 
 ## License
 
-[MIT](LICENSE.txt)
+[MIT](LICENSE)
